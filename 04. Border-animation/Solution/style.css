@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+a {
+    margin: 0.5em;
+    padding: 1em 1.4em;
+    outline: 5px rgb(32, 63, 93) solid;
+    color: rgb(45, 45, 45);
+    transition: 0.5s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+a:hover {
+    outline: 9px rgb(32, 63, 93) solid;
+    transition: 0.3s ease;
+}

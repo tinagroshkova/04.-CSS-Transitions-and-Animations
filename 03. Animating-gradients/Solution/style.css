@@ -1,0 +1,58 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;;
+}
+
+div {
+    position: absolute;
+    margin: auto;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+div {
+    width: 800px;
+    height: 450px;
+}
+
+div::before {
+    z-index: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    transition: opacity 0.5s linear;
+    background: linear-gradient(180deg,rgba(135,152,164) 0%, rgba(168,181,189,1) 35%, rgba(243,247,247,1) 100%);
+}
+
+div:hover::before {
+    opacity: 1;
+}
+
+div::after {
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    transition: opacity 0.5s linear;
+    background: linear-gradient(180deg, rgba(250,148,13,1) 0%, rgba(247,234,194,1) 93%, rgba(249,237,176,1) 100%);
+}
+
+div:hover::after {
+    opacity: 1;
+}
